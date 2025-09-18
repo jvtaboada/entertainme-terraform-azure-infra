@@ -1,4 +1,4 @@
-module "create_rg" {
+module "resource_group" {
   source = "./modules/resource_group"
 
   rg_name = local.rg_name
