@@ -1,0 +1,11 @@
+# Tenant ID (Azure AD)
+tenant_id       = "00000000-0000-0000-0000-000000000000"
+
+# Subscription ID
+subscription_id = "11111111-1111-1111-1111-111111111111"
+
+# Default Azure Region to deploy resources
+resources_region = "eastus"
+
+# Environment type to name resources, could be: dev, hmg, prd
+environment = "dev"
