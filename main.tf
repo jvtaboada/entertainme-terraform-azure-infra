@@ -9,7 +9,7 @@ module "virtual_network" {
   source = "./modules/virtual_network"
 
   vnet_name = local.vnet_name
-  location = var.azure_region
+  location = module.resource_group.rg_location
   rg_name = module.resource_group.rg_name
   vnet_cidr = "10.0.0.0/16"
 }
