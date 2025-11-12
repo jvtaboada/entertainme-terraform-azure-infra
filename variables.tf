@@ -17,3 +17,13 @@ variable "environment" {
   description = "Environment type to deploy"
   type        = string
 }
+
+variable "admin_username" {
+  description = "Administrator username to Postgres"
+  type        = string
+}
+
+variable "admin_password" {
+  description = "Administrator password to Postgres"
+  type        = string
+}

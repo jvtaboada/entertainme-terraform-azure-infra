@@ -9,3 +9,16 @@ azure_region = "eastus"
 
 # Environment type to name resources, could be: dev, hmg, prd
 environment = "dev"
+
+# Authentication for PostgreSQL Flexible Server
+
+# Admin login (1–63 characters)
+# - Must only contain characters and numbers
+# - Cannot be any of the following reserved names: azure_superuser, azure_pg_admin, admin, administrator, root, guest, public, pg_
+admin_username = "MyAdminLogin"
+
+# Admin password (8–128 characters)
+# - Must include at least one uppercase and one lowercase letter
+# - Can include numbers (0-9) and special characters (!, $, #, %, etc.)
+# - Cannot contain all or part of the admin login
+admin_password = "P#ssw0rdExample123!"

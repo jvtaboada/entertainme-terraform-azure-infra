@@ -29,3 +29,15 @@ variable "delegation_service" {
   type    = string
   default = null
 }
+
+variable "enable_service_endpoints" {
+  description = "Whether to enable service endpoints for this subnet"
+  type    = bool
+  default = false
+}
+
+variable "service_endpoints" {
+  description = "Which service endpoints will be connected for this subnet"
+  type    = string
+  default = null
+}
