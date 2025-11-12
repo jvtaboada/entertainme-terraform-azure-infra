@@ -63,18 +63,13 @@ module "vpn_gateway_subnet" {
 module "postgresql_flexible_server" {
   source = "./modules/postgresql_flexible_server"
 
-  # basics
   rg_name = module.resource_group.rg_name
   pg_name = local.postgres_instance_name
   rg_location = module.resource_group.rg_location
 
-  # compute / storage > all in module
-
-  # auth
   administrator_login           = var.admin_username
   administrator_password        = var.admin_password
 
-  # network
   virtual_network_id = module.virtual_network.vnet_id
   delegated_subnet_id = module.postgres_subnet.subnet_id
   private_dns_zone_name = local.private_dns_zone_name
